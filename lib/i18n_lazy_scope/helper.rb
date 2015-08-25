@@ -3,5 +3,6 @@ module I18nLazyScope
     def t_scoped(key, **args)
       t(key, scope: lazy_scope, **args)
     end
+    alias_method :ts, :t_scoped
   end
 end
